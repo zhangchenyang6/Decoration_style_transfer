@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换后图片</title>
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" media="screen" type="text/css">
+    
+</head>
+<body >
+<div class="maplebg"></div>
+<h1 align="center" >转换后图片</h1>
+
+<div align="center">
+    <img src="{{ url_for('static', filename=style) }}" width="15%" height="15%">
+    <img src="{{ url_for('static', filename=upload) }}" width="35%" height="35%">
+    <img src="{{ url_for('static', filename=transformed) }}" width="35%" height="35%">
+</div>
+
+<div align="center">
+   <br><br> <a class="btn btn-primary" href="/" style="font-size: large;text-decoration-line: none" >返回</a>
+</div>
+
+</body>
+</html>
